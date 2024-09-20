@@ -32,6 +32,9 @@ public class TP0_Calculator {
         if (operator>5){
             System.out.println("Sorry, there are no operators corresponding to "+operator);
         }
+        else if (operator<1){
+            System.out.println("Sorry, there are no operators corresponding to "+operator);
+        }
         else {
             // On demande à l'utilisateur une première valeur 
             Scanner val1 = new Scanner(System.in);
