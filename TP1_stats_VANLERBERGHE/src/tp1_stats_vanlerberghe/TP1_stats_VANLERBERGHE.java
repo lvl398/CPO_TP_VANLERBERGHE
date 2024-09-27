@@ -28,8 +28,7 @@ public class TP1_stats_VANLERBERGHE {
             tab[n]++;
         }
         for (int k=0; k<6; k++) {
-            tab[k]=(tab[k]*100)/m;
-            System.out.println("cellule "+ k +" : "+tab[k]+"%");
+            System.out.println("cellule "+ k +" : "+tab[k]*100*1.0/m+"%");
         }
     }
     
