@@ -39,4 +39,5 @@ public class BouteilleBiere {
         else chaine_a_retourner += "non" ;
         return chaine_a_retourner;
     }
+    
 }
