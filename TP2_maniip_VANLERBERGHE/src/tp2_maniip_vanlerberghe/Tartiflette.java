@@ -10,5 +10,9 @@ package tp2_maniip_vanlerberghe;
  * @author louison_vl
  */
 public class Tartiflette {
-    
+    int nbCalories;
+
+    public Tartiflette(int nbCalories) {
+        this.nbCalories = nbCalories;
+    }
 }

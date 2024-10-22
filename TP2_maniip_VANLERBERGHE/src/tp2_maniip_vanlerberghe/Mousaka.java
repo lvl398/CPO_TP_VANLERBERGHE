@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * TD2 Exercice 3
+ * TDB
+ * Octobre 2024
  */
 package tp2_maniip_vanlerberghe;
 
@@ -9,5 +10,11 @@ package tp2_maniip_vanlerberghe;
  * @author louison_vl
  */
 public class Mousaka {
+    int nbCalories;
+    
+
+    public Mousaka(int nbCalories) {
+        this.nbCalories = nbCalories;
+    }
     
 }
