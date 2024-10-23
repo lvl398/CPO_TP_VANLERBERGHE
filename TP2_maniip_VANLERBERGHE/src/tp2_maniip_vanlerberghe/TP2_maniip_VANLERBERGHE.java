@@ -43,34 +43,34 @@ public class TP2_maniip_VANLERBERGHE {
         
         // Création des 10 nouveaux objets qui sont ensuite placé dans le tableau 
         Mousaka assietteMousaka1=new Mousaka(100);
-        tableauMousaka[1] = assietteMousaka1;
+        tableauMousaka[0] = assietteMousaka1;
         
         Mousaka assietteMousaka2=new Mousaka(200);
-        tableauMousaka[2] = assietteMousaka2;
+        tableauMousaka[1] = assietteMousaka2;
         
         Mousaka assietteMousaka3=new Mousaka(300);
-        tableauMousaka[3] = assietteMousaka3;
+        tableauMousaka[2] = assietteMousaka3;
         
         Mousaka assietteMousaka4=new Mousaka(400);
-        tableauMousaka[4] = assietteMousaka4;
+        tableauMousaka[3] = assietteMousaka4;
         
         Mousaka assietteMousaka5=new Mousaka(500);
-        tableauMousaka[5] = assietteMousaka5;
+        tableauMousaka[4] = assietteMousaka5;
         
         Mousaka assietteMousaka6=new Mousaka(600);
-        tableauMousaka[6] = assietteMousaka6;
+        tableauMousaka[5] = assietteMousaka6;
         
         Mousaka assietteMousaka7=new Mousaka(700);
-        tableauMousaka[7] = assietteMousaka7;
+        tableauMousaka[6] = assietteMousaka7;
         
         Mousaka assietteMousaka8=new Mousaka(800);
-        tableauMousaka[8] = assietteMousaka8;
+        tableauMousaka[7] = assietteMousaka8;
         
         Mousaka assietteMousaka9=new Mousaka(900);
-        tableauMousaka[9] = assietteMousaka9;
+        tableauMousaka[8] = assietteMousaka9;
         
         Mousaka assietteMousaka10=new Mousaka(1000);
-        tableauMousaka[10] = assietteMousaka10;
+        tableauMousaka[9] = assietteMousaka10;
         
     }
     
