@@ -45,6 +45,8 @@ public class TP2_relation_1_VANLERBERGHE {
         System.out.println("la deuxième voiture de Bob est " + bob.liste_voitures[1]);
         System.out.println("la premiere voiture de Reno est " + reno.liste_voitures[0]);
         System.out.println("la deuxième voiture de Reno est " + reno.liste_voitures[1]);
+        
+        System.out.println(bob.ajouter_voiture(uneMicra));
     }
     
 }
