@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * TP3 Exercice 1
+ * TDB
+ * Novembre 2024
  */
 package tp3_heroic_fantasy_vanlerberghe;
 
@@ -8,9 +9,9 @@ package tp3_heroic_fantasy_vanlerberghe;
  *
  * @author louison_vl
  */
-public class Arme {
+public abstract class Arme {
     String nom;
-    int niveauAttaque;
+    protected int niveauAttaque;
 
     // Constructeur et conditions sur le niveau d'attaque qui est un entier entre 0 et 100
     public Arme(String nom, int niveauAttaque) {
@@ -23,6 +24,15 @@ public class Arme {
             this.niveauAttaque = 5;
         }
     }
+
+    public int getNiveauAttaque() {
+        return niveauAttaque;
+    }
+    public void setNiveauAttaque(int niveauAttaque) {
+        this.niveauAttaque = niveauAttaque;
+    }
+    
+    
 
     @Override
     public String toString() {
