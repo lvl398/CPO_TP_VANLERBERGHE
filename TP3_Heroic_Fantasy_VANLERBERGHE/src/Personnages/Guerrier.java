@@ -3,7 +3,9 @@
  * TDB
  * Novembre 2024
  */
-package tp3_heroic_fantasy_vanlerberghe;
+package Personnages;
+
+import Personnages.Personnage;
 
 /**
  *
@@ -23,7 +25,7 @@ public class Guerrier extends Personnage {
     
     @Override
     public String toString() {
-        return "Personnage{" + "Guerrier: " + "nom=" + nom + ", niveauVie=" + niveauVie + "cheval=" + cheval + '}';
+        return "Personnage{" + "Guerrier: " + "nom=" + nom + ", niveauVie=" + niveauVie + ", cheval=" + cheval + '}';
     }
     
     

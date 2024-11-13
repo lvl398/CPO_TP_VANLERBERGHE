@@ -3,7 +3,9 @@
  * TDB
  * Novembre 2024
  */
-package tp3_heroic_fantasy_vanlerberghe;
+package Personnages;
+
+import Personnages.Personnage;
 
 /**
  *
@@ -23,7 +25,7 @@ public class Magicien extends Personnage {
 
     @Override
     public String toString() {
-        return "Personnage{" + "Magicien: " + "nom=" + nom + ", niveauVie=" + niveauVie  + "confirme=" + confirme + '}';
+        return "Personnage{" + "Magicien: " + "nom=" + nom + ", niveauVie=" + niveauVie  + ", confirme=" + confirme + '}';
     }
     
     
