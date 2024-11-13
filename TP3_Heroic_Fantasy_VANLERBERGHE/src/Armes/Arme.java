@@ -3,7 +3,7 @@
  * TDB
  * Novembre 2024
  */
-package tp3_heroic_fantasy_vanlerberghe;
+package Armes;
 
 /**
  *

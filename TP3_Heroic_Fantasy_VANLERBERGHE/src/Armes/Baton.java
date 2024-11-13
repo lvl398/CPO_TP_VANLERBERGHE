@@ -3,7 +3,9 @@
  * TDB
  * Novembre 2024
  */
-package tp3_heroic_fantasy_vanlerberghe;
+package Armes;
+
+import Armes.Arme;
 
 /**
  *
@@ -12,7 +14,7 @@ package tp3_heroic_fantasy_vanlerberghe;
 public class Baton extends Arme {
     private int age;
 
-    public Baton(int age, String nom, int niveauAttaque) {
+    public Baton(String nom, int niveauAttaque, int age) {
         super(nom, niveauAttaque);
         this.age = age;
         if (age<100 & age>=0) {
@@ -23,5 +25,12 @@ public class Baton extends Arme {
             this.age = 5;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Arme{" +"Baton: "+ "nom=" + nom + ", niveauAttaque=" + niveauAttaque + ", age=" + age + '}';
+    }
+    
+    
     
 }
