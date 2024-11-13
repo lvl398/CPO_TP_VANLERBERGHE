@@ -52,10 +52,13 @@ public class TP3_Heroic_Fantasy_VANLERBERGHE {
         groupePersonnages.add(Conan);
         groupePersonnages.add(Lannister);
         
+        
         int taille2=groupePersonnages.size();
         for (int i=0 ; i<taille2 ; i++) {
             System.out.println(groupePersonnages.get(i));
         }
+        
+        
     }
     
 }

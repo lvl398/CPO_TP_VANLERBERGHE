@@ -30,6 +30,13 @@ public class Epee extends Arme {
     public String toString() {
         return "Arme{" + "Epee: " + "nom=" + nom + ", niveauAttaque=" + niveauAttaque  + ", finesse=" + finesse + '}';
     }
+
+    public int getFinesse() {
+        return finesse;
+    }
+    public void setFinesse(int finesse) {
+        this.finesse = finesse;
+    }
     
     
 }

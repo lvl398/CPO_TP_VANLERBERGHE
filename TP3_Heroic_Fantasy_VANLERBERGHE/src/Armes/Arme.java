@@ -31,6 +31,13 @@ public abstract class Arme {
     public void setNiveauAttaque(int niveauAttaque) {
         this.niveauAttaque = niveauAttaque;
     }
+
+    public String getNom() {
+        return nom;
+    }
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
     
     
 

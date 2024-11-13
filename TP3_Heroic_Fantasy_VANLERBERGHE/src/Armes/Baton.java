@@ -30,6 +30,13 @@ public class Baton extends Arme {
     public String toString() {
         return "Arme{" +"Baton: "+ "nom=" + nom + ", niveauAttaque=" + niveauAttaque + ", age=" + age + '}';
     }
+
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
     
     
     
