@@ -14,12 +14,12 @@ import java.util.ArrayList;
  * @author louison_vl
  */
 public abstract class Personnage {
-    protected String nom;
-    protected int niveauVie;
-    protected Arme Arme_en_Main;
+    private String nom;
+    private int niveauVie;
+    private Arme Arme_en_Main;
 
     // Constructeur 
-    public Personnage(String nom, int niveauVie, Arme armePorter) {
+    public Personnage(String nom, int niveauVie, Arme Arme_en_Main) {
         this.nom = nom;
         this.niveauVie = niveauVie;
         this.Arme_en_Main = (Arme) NULL;
@@ -46,7 +46,20 @@ public abstract class Personnage {
         int nombre=SacaDos.size();
         if (nombre<6) {
             SacaDos.add(arme);
-        }         
+        } 
+    }
+
+    public Arme getArme_en_Main() {
+        return Arme_en_Main;
+    }
+    
+    public void equiperPersonnage(Arme Arme) {
+        for (int k=0; k<6; k++) {
+            if (SacaDos.get(k)==Arme){
+                this.Arme_en_Main=SacaDos.get(k);
+                System.out.println("L'arme est bien dans l'inventaire, elle est équipée");
+            }
+        }
     }
     
 }

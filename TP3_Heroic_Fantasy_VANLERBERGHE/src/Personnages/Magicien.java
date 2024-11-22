@@ -5,7 +5,7 @@
  */
 package Personnages;
 
-import Personnages.Personnage;
+import Armes.Arme;
 
 /**
  *
@@ -14,18 +14,18 @@ import Personnages.Personnage;
 public class Magicien extends Personnage {
     private boolean confirme;
 
-    public Magicien(String nom, int niveauVie, boolean confirme) {
-        super(nom, niveauVie);
+    public Magicien(String nom, int niveauVie, Arme Arme_en_Main, boolean confirme) {
+        super(nom, niveauVie, Arme_en_Main);
         this.confirme = confirme;
     }
-
+    
     public void setConfirme(boolean confirme) {
         this.confirme = confirme;
     }
 
     @Override
     public String toString() {
-        return "Personnage{" + "Magicien: " + "nom=" + nom + ", niveauVie=" + niveauVie  + ", confirme=" + confirme + '}';
+        return "Personnage{" + "Magicien: " + "nom=" +getNom() + ", niveauVie=" + getNiveauVie()  + ", confirme=" + confirme + "\n"+ "Arme en main="+getArme_en_Main().toString()+ '}';
     }
     
     

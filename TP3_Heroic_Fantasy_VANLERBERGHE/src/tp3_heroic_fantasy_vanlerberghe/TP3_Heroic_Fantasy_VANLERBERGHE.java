@@ -11,6 +11,7 @@ import Personnages.Personnage;
 import Armes.Epee;
 import Armes.Baton;
 import Armes.Arme;
+import static java.lang.constant.ConstantDescs.NULL;
 import java.util.ArrayList;
 
 /**
@@ -26,8 +27,10 @@ public class TP3_Heroic_Fantasy_VANLERBERGHE {
         
         Epee Excalibur = new Epee ("Exacalibur",7,5);
         Epee Durandal = new Epee ("Durandal",4,7);
+        Epee Dard = new Epee ("Dard",6,9);
         Baton Chene = new Baton ("Chene",4,5);
         Baton Charme = new Baton ("Charme",5,6);
+        Baton Cerisier = new Baton ("Cerisier",42,25);
         
         ArrayList <Arme> groupeArmes = new ArrayList <Arme> ();
         groupeArmes.add(Excalibur);
@@ -41,23 +44,37 @@ public class TP3_Heroic_Fantasy_VANLERBERGHE {
         }
         
         
-        Magicien Gandalf = new Magicien ("Gandalf",65,true);
-        Magicien Garcimore = new Magicien ("Garcimore",44,false);
-        Guerrier Conan = new Guerrier ("Conan",78,false);
-        Guerrier Lannister = new Guerrier ("Lannister",45,true);
+        Magicien Gandalf = new Magicien ("Gandalf",65,(Arme)NULL,true);
+        Guerrier Conan = new Guerrier ("Conan",78,(Arme)NULL,false);
+        //Guerrier Lannister = new Guerrier ("Lannister",45,true);
+        //Magicien Garcimore = new Magicien ("Garcimore",44,false);
         
         ArrayList <Personnage> groupePersonnages = new ArrayList <Personnage> ();
         groupePersonnages.add(Gandalf);
-        groupePersonnages.add(Garcimore);
         groupePersonnages.add(Conan);
-        groupePersonnages.add(Lannister);
-        
+        //groupePersonnages.add(Lannister);
+        //groupePersonnages.add(Garcimore);
         
         int taille2=groupePersonnages.size();
         for (int i=0 ; i<taille2 ; i++) {
             System.out.println(groupePersonnages.get(i));
         }
         
+        Conan.ajouterArme(Charme);
+        Conan.ajouterArme(Durandal);
+        Conan.ajouterArme(Excalibur);
+        Conan.equiperPersonnage(Durandal);
+        
+        Gandalf.ajouterArme(Dard);
+        Gandalf.ajouterArme(Cerisier);
+        Gandalf.ajouterArme(Chene);
+        
+        System.out.println(Conan);
+        System.out.println(Gandalf);
+        //39. Ajouter les 1 bâ ton et 2 é pé es au stock d’armes du guerrier et faites lui choisir la premiè re é pé e.
+        //40. Ajouter au stock d'armes du magicien 2 bâ tons et une é pé e.
+        //41. Afficher le nombre d'armes pré fé ré es du magicien.
+        //42. Afficher toutes les caracté ristiques des personnages
         
     }
     
