@@ -44,8 +44,8 @@ public class TP3_Heroic_Fantasy_VANLERBERGHE {
         }
         
         
-        Magicien Gandalf = new Magicien ("Gandalf",65,(Arme)NULL,true);
-        Guerrier Conan = new Guerrier ("Conan",78,(Arme)NULL,false);
+        Magicien Gandalf = new Magicien ("Gandalf",65,null,true);
+        Guerrier Conan = new Guerrier ("Conan",78,null,false);
         //Guerrier Lannister = new Guerrier ("Lannister",45,true);
         //Magicien Garcimore = new Magicien ("Garcimore",44,false);
         
@@ -71,10 +71,6 @@ public class TP3_Heroic_Fantasy_VANLERBERGHE {
         
         System.out.println(Conan);
         System.out.println(Gandalf);
-        //39. Ajouter les 1 bâ ton et 2 é pé es au stock d’armes du guerrier et faites lui choisir la premiè re é pé e.
-        //40. Ajouter au stock d'armes du magicien 2 bâ tons et une é pé e.
-        //41. Afficher le nombre d'armes pré fé ré es du magicien.
-        //42. Afficher toutes les caracté ristiques des personnages
         
     }
     

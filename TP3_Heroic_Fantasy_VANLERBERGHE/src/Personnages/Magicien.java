@@ -7,16 +7,23 @@ package Personnages;
 
 import Armes.Arme;
 
+
 /**
  *
  * @author louison_vl
  */
 public class Magicien extends Personnage {
     private boolean confirme;
+    private int comptageMagicien=0;
 
     public Magicien(String nom, int niveauVie, Arme Arme_en_Main, boolean confirme) {
         super(nom, niveauVie, Arme_en_Main);
         this.confirme = confirme;
+        this.comptageMagicien=comptageMagicien+1;
+    }
+    
+    public void finalize() {
+        this.comptageMagicien=comptageMagicien-1;
     }
     
     public void setConfirme(boolean confirme) {
@@ -28,6 +35,26 @@ public class Magicien extends Personnage {
         return "Personnage{" + "Magicien: " + "nom=" +getNom() + ", niveauVie=" + getNiveauVie()  + ", confirme=" + confirme + "\n"+ "Arme en main="+getArme_en_Main().toString()+ '}';
     }
     
+    @Override 
+    public void seFatiguer() {
+        this.getNiveauVie()=;
+        
+    }
     
+    @Override
+    public boolean estVivant() {
+        boolean result;
+        if (this.getNiveauVie()==0) {
+            result=false;
+        } else {
+            result=true;
+        }
+        return result;
+    }
+    
+    @Override
+    public void estAttaquer (int points) {
+        this.getNiveauVie()=this.getNiveauVie()-points;
+    }
     
 }

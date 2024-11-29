@@ -5,6 +5,7 @@
  */
 package Personnages;
 
+import tp3_heroic_fantasy_vanlerberghe.etreVivant;
 import Armes.Arme;
 import static java.lang.constant.ConstantDescs.NULL;
 import java.util.ArrayList;
@@ -13,16 +14,23 @@ import java.util.ArrayList;
  *
  * @author louison_vl
  */
-public abstract class Personnage {
+public abstract class Personnage implements etreVivant{
+    
     private String nom;
     private int niveauVie;
     private Arme Arme_en_Main;
+    private int comptage=0;
 
     // Constructeur 
     public Personnage(String nom, int niveauVie, Arme Arme_en_Main) {
         this.nom = nom;
         this.niveauVie = niveauVie;
-        this.Arme_en_Main = (Arme) NULL;
+        this.Arme_en_Main = null;
+        this.comptage=comptage+1;
+    }
+    
+    public void finalize() {
+        this.comptage=comptage-1;
     }
 
     // Méthode toString()
@@ -61,5 +69,7 @@ public abstract class Personnage {
             }
         }
     }
+    
+    
     
 }
