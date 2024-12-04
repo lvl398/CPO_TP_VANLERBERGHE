@@ -10,15 +10,15 @@ package tp3_heroic_fantasy_vanlerberghe;
  */
 public interface etreVivant {
     
-    public void seFatiguer() {
+    public void seFatiguer() ;
         
-    }
     
-    public boolean estVivant() {
-        
-    }
     
-    public void estAttaquer (int points) {
+    public boolean estVivant() ;
         
-    }
+    
+    
+    public void estAttaquer (int points) ;
+        
+    
 }

@@ -70,6 +70,27 @@ public abstract class Personnage implements etreVivant{
         }
     }
     
+    @Override 
+    public void seFatiguer() {
+        niveauVie-= 10;
+        
+    }
+    
+    @Override
+    public boolean estVivant() {
+        boolean result;
+        if (this.getNiveauVie()==0) {
+            result=false;
+        } else {
+            result=true;
+        }
+        return result;
+    }
+    
+    @Override
+    public void estAttaquer (int points) {
+        niveauVie -= points;
+    }
     
     
 }

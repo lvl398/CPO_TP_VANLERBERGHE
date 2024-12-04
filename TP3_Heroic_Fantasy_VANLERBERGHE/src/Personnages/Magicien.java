@@ -35,26 +35,4 @@ public class Magicien extends Personnage {
         return "Personnage{" + "Magicien: " + "nom=" +getNom() + ", niveauVie=" + getNiveauVie()  + ", confirme=" + confirme + "\n"+ "Arme en main="+getArme_en_Main().toString()+ '}';
     }
     
-    @Override 
-    public void seFatiguer() {
-        this.getNiveauVie()=;
-        
-    }
-    
-    @Override
-    public boolean estVivant() {
-        boolean result;
-        if (this.getNiveauVie()==0) {
-            result=false;
-        } else {
-            result=true;
-        }
-        return result;
-    }
-    
-    @Override
-    public void estAttaquer (int points) {
-        this.getNiveauVie()=this.getNiveauVie()-points;
-    }
-    
 }
